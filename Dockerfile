@@ -26,7 +26,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get clean && apt-get update
 
 # install some basic packages and virtuoso
-RUN apt-get install -y nginx-light libldap-2.4-2 libssl1.0.0 unixodbc virtuoso-opensource raptor2-utils
+RUN apt-get install -y nginx-light libldap-2.4-2 libssl1.0.0 unixodbc virtuoso-opensource raptor2-utils pbzip2 pigz
 
 ADD import* /
 
